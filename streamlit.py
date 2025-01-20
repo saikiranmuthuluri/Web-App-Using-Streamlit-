@@ -88,7 +88,7 @@ elif menu == "Price Prediction":
     y = np.array(data['price']).reshape(-1, 1)
     lr.fit(X, y)  
     
-    value = st.number_input("Carat", 0.29, 5.01, step=0.15)
+    value = st.number_input("Carat", 0.30, 5.01, step=0.15)
     value = np.array(value).reshape(1, -1)
     Prediction = lr.predict(value)[0]
     
